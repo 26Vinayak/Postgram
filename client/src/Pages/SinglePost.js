@@ -116,7 +116,6 @@ function SinglePost(props) {
                                                 disabled = {coment.trim() === ''}
                                                 onClick = {submitComment}
                                             ><strong style = {{color:"white"}}>Submit</strong></button>
-
                                         </div>
                                     </Form>    
                                 </Card.Content>
@@ -131,7 +130,7 @@ function SinglePost(props) {
                                     <Card.Header>{comment.username}</Card.Header>
                                     <Card.Meta>{moment(comment.createdAt).fromNow()}</Card.Meta>
                                     <Card.Description>{comment.body}</Card.Description>
-                                </Card.Content>
+                           </Card.Content>
                             </Card> 
                         })}
 
