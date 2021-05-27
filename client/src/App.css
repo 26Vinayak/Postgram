@@ -1,0 +1,14 @@
+.page-title{
+    display: block !important;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.form-container{
+    width: 400px;
+    margin:auto;
+}
+.ui.pink.button:focus, .ui.pink.buttons.button:focus{
+    background-color: #e03997;
+}
