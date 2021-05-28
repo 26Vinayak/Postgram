@@ -6,7 +6,6 @@ import { useMutation } from '@apollo/client';
 
 
 function LikeButton({post:{id,likeCount,likes},user}) {    
-    const [error, setErrors] = useState('');
     const [liked,setLiked] = useState(false);
 
     useEffect(() => {
@@ -18,9 +17,8 @@ function LikeButton({post:{id,likeCount,likes},user}) {
 
     const [likePost] = useMutation(LIKE_POST_MUTATION,{
         variables:{postId:id},
-        onError(err) {
-            setErrors(err.graphQLErrors[0].extensions.exception.errors);
-        }
+        errorPolicy:'all'
+        
     });
      const likeButton = user ? (
         liked ? (
