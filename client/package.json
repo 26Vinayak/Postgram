@@ -48,5 +48,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://postgarm-26.herokuapp.com/"
+  "proxy": "https://postgarm-26.herokuapp.com/",
+  "devDependencies": {
+    "netlify-cli": "^3.31.14"
+  }
 }
